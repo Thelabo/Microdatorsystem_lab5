@@ -1,0 +1,105 @@
+## CHANGELOG
+2013-10-09 - RC version 5.0 released.
+2013-09-18 - RC version 2.0 released
+2013-09-11 - RC version 1.0 released.
+
+## SYSTEM INFO
+
+Device
+PIC24FJ128GA010
+Checksum: 0xF95A
+Compiler Toolchain
+XC16 (v1.11) [C:\Program Files (x86)\Microchip\xc16\v1.11\bin]
+Memory
+RAM 9820 (0x265C) bytes
+RAM Used: 15,6%
+RAM Used: 1532 (0x5FC) Free: 8288 (0x2060)
+RAM Reserved: Production Image
+Flash 44030 (0xABFE) words
+Flash Used: 29,9%
+Flash Used: 13182 (0x337E) Free: 30848 (0x7880)
+Flash Reserved: Production Image
+Debug Resources
+Program BP Used: 1  Free: 3
+Data BP Used: 1  Free: 3
+Data Capture BP: No Support
+Unlimited BP (S/W): Disabled
+Debug Tool
+ ICD 3: JIT131411005
+
+## BUILD OUTPUT
+
+
+
+CLEAN SUCCESSFUL (total time: 252ms)
+make -f nbproject/Makefile-default.mk SUBPROJECTS= .build-conf
+make[1]: Entering directory `D:/Skola/SVN/Trunk'
+make  -f nbproject/Makefile-default.mk dist/default/production/Trunk.production.hex
+make[2]: Entering directory `D:/Skola/SVN/Trunk'
+"C:\Program Files (x86)\Microchip\xc16\v1.11\bin\xc16-gcc.exe"   KnightRider.c  -o build/default/production/KnightRider.o  -c -mcpu=24FJ128GA010  -MMD -MF "build/default/production/KnightRider.o.d"      -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
+"C:\Program Files (x86)\Microchip\xc16\v1.11\bin\xc16-gcc.exe"   Isr.c  -o build/default/production/Isr.o  -c -mcpu=24FJ128GA010  -MMD -MF "build/default/production/Isr.o.d"      -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
+Isr.c: In function '_T1Interrupt':
+elf-cc1.exe: warning: _T1Interrupt PSV model not specified for '_T1Interrupt';
+assuming 'auto_psv' this may affect latency
+Isr.c: In function '_U2RXInterrupt':
+elf-cc1.exe: warning: _U2RXInterrupt PSV model not specified for '_U2RXInterrupt';
+assuming 'auto_psv' this may affect latency
+"C:\Program Files (x86)\Microchip\xc16\v1.11\bin\xc16-gcc.exe"   Main.c  -o build/default/production/Main.o  -c -mcpu=24FJ128GA010  -MMD -MF "build/default/production/Main.o.d"      -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
+"C:\Program Files (x86)\Microchip\xc16\v1.11\bin\xc16-gcc.exe"   LCD.c  -o build/default/production/LCD.o  -c -mcpu=24FJ128GA010  -MMD -MF "build/default/production/LCD.o.d"      -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
+"C:\Program Files (x86)\Microchip\xc16\v1.11\bin\xc16-gcc.exe"   write.c  -o build/default/production/write.o  -c -mcpu=24FJ128GA010  -MMD -MF "build/default/production/write.o.d"      -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
+"C:\Program Files (x86)\Microchip\xc16\v1.11\bin\xc16-gcc.exe"   RTCC.c  -o build/default/production/RTCC.o  -c -mcpu=24FJ128GA010  -MMD -MF "build/default/production/RTCC.o.d"      -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
+"C:\Program Files (x86)\Microchip\xc16\v1.11\bin\xc16-gcc.exe"   CommRS232.c  -o build/default/production/CommRS232.o  -c -mcpu=24FJ128GA010  -MMD -MF "build/default/production/CommRS232.o.d"      -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
+"C:\Program Files (x86)\Microchip\xc16\v1.11\bin\xc16-gcc.exe"   CBuffer.c  -o build/default/production/CBuffer.o  -c -mcpu=24FJ128GA010  -MMD -MF "build/default/production/CBuffer.o.d"      -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
+"C:\Program Files (x86)\Microchip\xc16\v1.11\bin\xc16-gcc.exe"   FSIO.c  -o build/default/production/FSIO.o  -c -mcpu=24FJ128GA010  -MMD -MF "build/default/production/FSIO.o.d"      -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
+"C:\Program Files (x86)\Microchip\xc16\v1.11\bin\xc16-gcc.exe"   SD-SPI.c  -o build/default/production/SD-SPI.o  -c -mcpu=24FJ128GA010  -MMD -MF "build/default/production/SD-SPI.o.d"      -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
+"C:\Program Files (x86)\Microchip\xc16\v1.11\bin\xc16-gcc.exe"   Logger.c  -o build/default/production/Logger.o  -c -mcpu=24FJ128GA010  -MMD -MF "build/default/production/Logger.o.d"      -g -omf=elf -O0 -msmart-io=1 -Wall -msfr-warn=off
+"C:\Program Files (x86)\Microchip\xc16\v1.11\bin\xc16-gcc.exe"   -o dist/default/production/Trunk.production.elf  build/default/production/KnightRider.o build/default/production/Isr.o build/default/production/Main.o build/default/production/LCD.o build/default/production/write.o build/default/production/RTCC.o build/default/production/CommRS232.o build/default/production/CBuffer.o build/default/production/FSIO.o build/default/production/SD-SPI.o build/default/production/Logger.o      -mcpu=24FJ128GA010        -omf=elf -Wl,--defsym=__MPLAB_BUILD=1,,--script=p24FJ128GA010.gld,--stack=16,--check-sections,--data-init,--pack-data,--handles,--isr,--no-gc-sections,--fill-upper=0,--stackguard=16,--no-force-link,--smart-io,-Map="dist/default/production/Trunk.production.map",--report-mem
+
+
+Program Memory  [Origin = 0x200, Length = 0x155fa]
+
+section                    address   length (PC units)   length (bytes) (dec)
+-------                    -------   -----------------   --------------------
+.text                        0x200               0xa96           0xfe1  (4065)
+.const                       0xc96               0x134           0x1ce  (462)
+.text                        0xdca              0x56d8          0x8244  (33348)
+.dinit                      0x64a2                0xa6            0xf9  (249)
+.text                       0x6548               0x1b4           0x28e  (654)
+
+                     Total program memory used (bytes):         0x977a  (38778) 29%
+
+
+Data Memory  [Origin = 0x800, Length = 0x2000]
+
+section                    address      alignment gaps    total length  (dec)
+-------                    -------      --------------    -------------------
+_032726605254f9fe            0x800                   0           0x200  (512)
+_032727805254f9fe            0xa00                   0           0x200  (512)
+.nbss                        0xc00                   0           0x198  (408)
+.ndata                       0xd98                   0            0x1e  (30)
+.nbss                        0xdb6                   0             0xe  (14)
+.ndata                       0xdc4                   0             0x8  (8)
+.data._iob                   0xdcc                   0            0x26  (38)
+.bss                         0xdf2                   0             0x8  (8)
+.data.__C30_UART             0xdfa                   0             0x2  (2)
+
+                        Total data memory used (bytes):          0x5fc  (1532) 18%
+
+
+Dynamic Memory Usage
+
+region                     address                      maximum length  (dec)
+------                     -------                      ---------------------
+heap                             0                                   0  (0)
+stack                        0xdfc                              0x1a04  (6660)
+
+                        Maximum dynamic memory (bytes):         0x1a04  (6660)
+
+"C:\Program Files (x86)\Microchip\xc16\v1.11\bin"\\xc16-bin2hex dist/default/production/Trunk.production.elf -a  -omf=elf
+make[2]: Leaving directory `D:/Skola/SVN/Trunk'
+make[1]: Leaving directory `D:/Skola/SVN/Trunk'
+
+BUILD SUCCESSFUL (total time: 6s)
+Loading code from D:/Skola/SVN/Trunk/dist/default/production/Trunk.production.hex...
+Loading symbols from D:/Skola/SVN/Trunk/dist/default/production/Trunk.production.elf...
+Loading completed
